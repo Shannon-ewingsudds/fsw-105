@@ -19,7 +19,7 @@ function game(){
     const index = readlineSync.keyInSelect(menu, "What would you like to do?");
 
     if(menu[index] == "Abandon"){
-        console.log (`${name} has Abadndoned planet NoWhere`);
+
         return playerHealth = 0;
     }
     else if (menu[index] == "print"){
@@ -57,8 +57,8 @@ function game(){
                                 let loot = Math.random();
                                 if (loot <= .3){
                                     infinityStones.push(collected);
-                                }
-                                }
+                            }
+                            }
                             else if (playerHealth <= 0){
                                 console.log(`${enemy} has killed ${name}. GAME OVER`);
                             }
